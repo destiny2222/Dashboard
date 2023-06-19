@@ -1,0 +1,506 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Transaction</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="We offer virtual debit visa cards &amp; Giftcards  that allow you to pay for goods and services online." />
+    <link rel="shortcut icon" href="" />
+    <link rel="stylesheet" href="assets/css/fontawesome-free.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/select.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/quill.core.css">
+    <link rel="stylesheet" href="assets/css/argon.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/datepicker.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/pincode.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/toast.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+    <link rel="stylesheet" href="assets/css/docs.css" type="text/css">
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/pretty-print-json@1.2/dist/pretty-print-json.css>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.6/css/selectize.bootstrap5.min.css"
+        type="text/css">
+    <link href="assets/css/styles.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="assets/css/all.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/filepond.css" rel="stylesheet" />
+    <link href="assets/css/filepond-plugin-image-preview.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- <link rel="stylesheet" href="assets/css/megaphone.css"> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        input:-webkit-autofill,
+        select:-webkit-autofill,
+        textarea:-webkit-autofill {
+            animation-duration: 50000s;
+            animation-name: livewireautofill;
+        }
+
+        @keyframes livewireautofill {
+            from {}
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;600;700;800&display=swap');
+
+        body {
+            font-family: "Oxygen", sans-serif;
+        }
+
+        pre,
+        code,
+        kbd,
+        samp {
+            font-family: "Oxygen", Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+        }
+
+        .tooltip {
+            font-family: "Oxygen", sans-serif;
+        }
+
+        .popover {
+            font-family: "Oxygen", sans-serif;
+        }
+
+        .text-monospace {
+            font-family: "Oxygen", Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important;
+        }
+
+        .btn-group-colors>.btn:before {
+            font-family: "Oxygen", sans-serif;
+        }
+
+        .accordion .card-header:after {
+            font: normal normal normal 14px/1 Oxygen;
+        }
+
+        .has-danger:after {
+            font-family: 'Oxygen';
+        }
+
+        .fc-icon {
+            font-family: "Oxygen", sans-serif;
+        }
+
+        .ql-container {
+            font-family: "Oxygen", sans-serif;
+        }
+    </style>
+</head>
+<!-- header begin-->
+
+<body class="" cz-shortcut-listen="true" style="min-height: 100vh;">
+    <!-- Sidenav -->
+    <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light dd-bg" id="sidenav-main">
+        <div class="scrollbar-inner">
+            <!-- Brand -->
+            <div class="sidenav-header d-flex align-items-center">
+                <a class="navbar-brand icons" href="#">
+                    <!-- <img src="" class="navbar-brand-img" alt="..."> -->
+                    Dashboard
+                </a>
+                <div class="ml-auto">
+                    <!-- Sidenav toggler -->
+                    <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin"
+                        data-target="#sidenav-main">
+                        <div class="sidenav-toggler-inner">
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-inner mb-5">
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+                    <!-- Nav items -->
+                    <h6 class="navbar-heading p-0 text-muted">Business</h6>
+                    <ul class="navbar-nav mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link  active dd-bg " href="index.html">
+                                <i class="fa  fa-house icons"></i>
+                                <span class="nav-link-text px-3">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Transactions.html">
+                                <i class="fa-solid fa-chart-simple icons"></i>
+                                <span class="nav-link-text px-3">Transactions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                <i class="fa-solid fa-file-invoice icons"></i>
+                                <span class="nav-link-text px-3">Chargebacks
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <h6 class="navbar-heading p-0 text-muted">Account</h6>
+                    <ul class="navbar-nav mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                <i class="fa fa-user-plus icons"></i>
+                                <span class="nav-link-text px-3">Payment links</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="profile.html">
+                                <i class="fa fa-sliders icons"></i>
+                                <span class="nav-link-text px-3">Transfer Money</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="profile.html">
+                                <i class="fa fa-sliders icons"></i>
+                                <span class="nav-link-text px-3">Virtual Card</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="profile.html">
+                                <i class="fa fa-sliders icons"></i>
+                                <span class="nav-link-text px-3">Recharge Mobile</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h6 class="navbar-heading p-0 text-muted">Support</h6>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="profile.html">
+                                <i class="fa fa-sliders icons"></i>
+                                <span class="nav-link-text px-3">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="#">
+                                <i class="fa fa-ticket icons"></i>
+                                <span class="nav-link-text px-3">Doc</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-sign-out text-red"></i>
+                                <span class="nav-link-text px-3">Log out</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content" id="panel">
+        <!-- Topnav -->
+        <nav class="navbar navbar-top navbar-expand navbar-dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-none d-sm-block">
+                        <h6 class="h1 font-weight-bolder text-dark ">Dashboard</h6>
+                    </div>
+                    <ul class="navbar-nav align-items-center ml-md-auto">
+                        <li class="nav-item d-xl-none">
+                            <!-- Sidenav toggler -->
+                            <div class="pr-3 sidenav-toggler sidenav-toggler-light" data-action="sidenav-pin"
+                                data-target="#sidenav-main">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark cursor-pointer" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-shopping-cart fa-lg icons pt-g-2"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
+                                <!-- Dropdown header -->
+                                <div class="px-3 py-3">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h6 class="text-sm text-dark m-0">You have <strong
+                                                    class="text-primary">0</strong> Gift Cards in
+                                                cart.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- List group -->
+                                <div class="list-group list-group-flush">
+                                </div>
+                            </div>
+                        </li>
+                        <div class="megaphone">
+                            <div class="relative w-12 h-12 openbell">
+                                <div class="relative z-20 w-6 h-6 cursor-pointer ml-3">
+                                    <i class="fa  fa-bell  fa-lg icons "></i>
+                                </div>
+                                <div class="w-full fixed z-50 top-0 right-0 h-full overflow-x-hidden transform translate-x-0 transition ease-in-out duration-700"
+                                    id="notification">
+                                    <div class="fixed w-full h-full top-0 left-0 z-0"></div>
+
+                                    <div
+                                        class="2xl:w-4/12 bg-gray-50 dd-bg h-screen Closemodel overflow-y-auto xp-8 pt-3 absolute right-0 z-30">
+                                        <div class="flex items-center justify-between">
+                                            <p tabindex="0"
+                                                class="focus:outline-none text-2xl font-semibold leading-6 text-gray-800">
+                                                Notifications</p>
+                                            <button role="button" id="close_icon"
+                                                class="focus:outline-none  focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md cursor-pointer">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 6L6 18" stroke="#4B5563" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M6 6L18 18" stroke="#4B5563" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+
+                                        <div class="flex items-center justiyf-between">
+                                            <hr class="w-full">
+                                            <p tabindex="0"
+                                                class="focus:outline-none text-sm flex flex-shrink-0 leading-normal px-3 py-16 text-gray-500">
+                                                No new announcements
+                                            </p>
+                                            <hr class="w-full">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="navbar-nav align-items-center ml-auto ml-md-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link pr-0 cursor-pointer" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="media align-items-center">
+                                    <div
+                                        class="icon icon-shape bg-white text-primary rounded-circle shadow font-weight-bold">
+                                        <i class="fa fa-user sm icons"></i>
+                                    </div>
+                                    <div class="media-body ml-2 d-none d-sm-block">
+                                        <p class="mb-0 text-sm font-weight-bold text-dark"></p>
+                                        <span class="text-dark text-uppercase text-xs">Individual Account</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="profile.html" class="dropdown-item">
+                                    <i class="fa fa-user icons"></i> <span>Profile</span>
+                                </a>
+                                <a href="notification.html" class="dropdown-item">
+                                    <i class="fa fa-bell icons"></i> <span>Notifications</span>
+                                </a>
+                                <a href="Security.html" class="dropdown-item">
+                                    <i class="fa fa-lock icons"></i> <span>Security</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <i class="fa fa-sign-out icons"></i> <span>Log out</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="container-fluid mt-6">
+                        <div class="content-wrapper mt-3">
+                            <a href="#" data-toggle="modal" data-target="#buy" class="btn btn-neutral mb-3">New card</a>
+                            <div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="modal-form"
+                                style="display: none;" aria-hidden="true">
+                                <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="mb-0 font-weight-bolder">New card</h3>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <form role="form" action="" method="post" id="payment-form">
+                                            <div class="modal-body">
+                                                <input type="hidden" name="_token" value="">
+                                                <div class="form-group row">
+                                                    <div class="col-lg-12">
+                                                        <div class="input-group">
+                                                            <input type="number" step="any" class="form-control"
+                                                                autocomplete="off" id="amount" name="amount"
+                                                                placeholder="How much?" min="100" max="10000000">
+                                                            <span class="input-group-append">
+                                                                <select class="form-control select"
+                                                                    style="padding: 0.35rem 2rem 0.35rem;" id="currency"
+                                                                    name="currency" required="">
+                                                                    <option value="27*100*10000000*0*0*NGN">🇳🇬 NGN
+                                                                    </option>
+                                                                    <option value="25*5*10000*2*5*USD">🇺🇸 USD</option>
+                                                                </select>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <p>Card creation fee: <span id="creation">NGN
+                                                                        0.00</span></p>
+                                                                <p>Total: <span id="total">NGN 0.00</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-neutral btn-block my-4"
+                                                    id="ggglogin">Pay</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="table-responsive py-4">
+                                    <div id="example_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                        <div class="row">
+                                            <div
+                                                class="col-md-6 col-12 d-flex align-items-center justify-conten-start mb-2">
+                                            </div>
+                                            <div class="col-md-6 col-12 d-flex align-items-center justify-content-end">
+                                                <div id="example_filter" class="dataTables_filter"><label>Search:<input
+                                                            type="search" class="form-control form-control-sm"
+                                                            placeholder="" aria-controls="example"></label></div>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table table-flush dataTable no-footer" id="example"
+                                                role="grid" aria-describedby="example_info">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th class="sorting_asc" tabindex="0" aria-controls="example"
+                                                            rowspan="1" colspan="1" aria-sort="ascending"
+                                                            aria-label="S/N: activate to sort column descending"
+                                                            style="width: 51.9531px;">S/N</th>
+                                                        <th class="text-center sorting" tabindex="0"
+                                                            aria-controls="example" rowspan="1" colspan="1"
+                                                            aria-label="Card Holder: activate to sort column ascending"
+                                                            style="width: 155.609px;">Card Holder</th>
+                                                        <th class="text-center sorting" tabindex="0"
+                                                            aria-controls="example" rowspan="1" colspan="1"
+                                                            aria-label="Card Balance: activate to sort column ascending"
+                                                            style="width: 165.234px;">Card Balance</th>
+                                                        <th class="text-center sorting" tabindex="0"
+                                                            aria-controls="example" rowspan="1" colspan="1"
+                                                            aria-label="Card Number: activate to sort column ascending"
+                                                            style="width: 158.344px;">Card Number</th>
+                                                        <th class="text-center sorting" tabindex="0"
+                                                            aria-controls="example" rowspan="1" colspan="1"
+                                                            aria-label="Status: activate to sort column ascending"
+                                                            style="width: 91.2188px;">Status</th>
+                                                        <th class="text-center sorting" tabindex="0"
+                                                            aria-controls="example" rowspan="1" colspan="1"
+                                                            aria-label="Created: activate to sort column ascending"
+                                                            style="width: 107.641px;">Created</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="odd">
+                                                        <td valign="top" colspan="6" class="dataTables_empty">No data
+                                                            available in table</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row">
+                                            <div
+                                                class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                                                <div class="dataTables_length" id="example_length"><label>Show <select
+                                                            name="example_length" aria-controls="example"
+                                                            class="custom-select custom-select-sm form-control form-control-sm">
+                                                            <option value="10">10</option>
+                                                            <option value="25">25</option>
+                                                            <option value="50">50</option>
+                                                            <option value="100">100</option>
+                                                        </select></label></div>
+                                            </div>
+                                            <div
+                                                class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                                                <div class="dataTables_info" id="example_info" role="status"
+                                                    aria-live="polite">Showing 0 to 0 of 0 entries</div>
+                                            </div>
+                                            <div
+                                                class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
+                                                <div class="dataTables_paginate paging_simple_numbers"
+                                                    id="example_paginate">
+                                                    <ul class="pagination">
+                                                        <li class="paginate_button page-item previous disabled"
+                                                            id="example_previous"><a href="#" aria-controls="example"
+                                                                data-dt-idx="0" tabindex="0"
+                                                                class="page-link">Previous</a></li>
+                                                        <li class="paginate_button page-item next disabled"
+                                                            id="example_next"><a href="#" aria-controls="example"
+                                                                data-dt-idx="1" tabindex="0" class="page-link">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- footer begin -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/js.cookie.js"></script>
+        <script src="assets/js/jquery.scrollbar.min.js"></script>
+        <script src="assets/js/jquery-scrollLock.min.js"></script>
+        <script src="assets/js/jquery-jvectormap.min.js"></script>
+        <script src="assets/js/jquery-jvectormap-world-mill.js"></script>
+        <script src="assets/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/js/dataTables.buttons.min.js"></script>
+        <script src="assets/js/buttons.bootstrap4.min.js"></script>
+        <script src="assets/js/buttons.html5.min.js"></script>
+        <script src="assets/js/buttons.flash.min.js"></script>
+        <script src="assets/js/buttons.print.min.js"></script>
+        <script src="assets/js/dataTables.select.min.js"></script>
+        <script src="assets/js/selectize.min.js"></script>
+        <script src="assets/js/clipboard.min.js"></script>
+        <script src="assets/js/select2.min.js"></script>
+        <script src="assets/js/argon.js"></script>
+        <script src="assets/js/datepicker.js"></script>
+        <script src="assets/js/pincode.js"></script>
+        <script src="assets/js/toast.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+        <script src="assets/js/prism.js"></script>
+        <script src=https://cdn.jsdelivr.net/npm/pretty-print-json@1.2/dist/pretty-print-json.min.js></script>
+        <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+        <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+        <script src="assets/js/alpine.js" defer></script>
+        <script src="assets/js/script.js"></script>
+</body>
+
+</html>

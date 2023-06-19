@@ -9,7 +9,7 @@
   <meta name="robots" content="index, follow">
   <meta name="description"
     content="We offer virtual debit visa cards &amp; Giftcards  that allow you to pay for goods and services online." />
-  <link rel="shortcut icon"  href="" />
+  <link rel="shortcut icon" href="" />
   <link rel="stylesheet" href="assets/css/fontawesome-free.css" type="text/css">
   <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="assets/css/buttons.bootstrap4.min.css">
@@ -25,12 +25,11 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.6/css/selectize.bootstrap5.min.css" type="text/css">
   <link href="assets/css/styles.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="assets/css/all.css" rel="stylesheet" type="text/css">
   <link href="assets/css/filepond.css" rel="stylesheet" />
-  <link href="assets/css/filepond-plugin-image-preview.css"
-    rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/custom.css">
+  <link href="assets/css/filepond-plugin-image-preview.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/custom.css">
   <!-- <link rel="stylesheet" href="assets/css/megaphone.css"> -->
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <style>
@@ -128,38 +127,6 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">
-                <i class="fa-solid fa-credit-card icons"></i>
-                <span class="nav-link-text px-3">Debit Cards</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">
-                <i class="fa-solid fa-file-invoice icons"></i>
-                <span class="nav-link-text px-3">Pay Bills
-                </span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" data-toggle="collapse" role="button" aria-expanded="false"  aria-controls="navbar-examples">
-                <i class="fa-solid fa-gift icons"></i>
-                <span class="nav-link-text px-3">Buy Giftcards
-                </span>
-              </a>
-              <div class="collapse " id="brcard">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item ">
-                    <a href="#" class="nav-link">Order
-                      Giftcard
-                    </a>
-                  </li>
-                  <li class="nav-item ">
-                    <a href="#" class="nav-link">Purchase History</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
               <a class="nav-link " href="Transactions.html">
                 <i class="fa-solid fa-chart-simple icons"></i>
                 <span class="nav-link-text px-3">Transactions</span>
@@ -167,10 +134,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link " href="#">
-                <i class="fa fa-user icons"></i>
-                <span class="nav-link-text px-3">Beneficiaries</span>
+                <i class="fa-solid fa-file-invoice icons"></i>
+                <span class="nav-link-text px-3">Chargebacks
+                </span>
               </a>
             </li>
+
           </ul>
 
           <h6 class="navbar-heading p-0 text-muted">Account</h6>
@@ -178,25 +147,40 @@
             <li class="nav-item">
               <a class="nav-link " href="#">
                 <i class="fa fa-user-plus icons"></i>
-                <span class="nav-link-text px-3">Refer &amp; Earn</span>
+                <span class="nav-link-text px-3">Payment links</span>
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link " href="profile.html">
+                <i class="fa fa-sliders icons"></i>
+                <span class="nav-link-text px-3">Transfer Money</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="profile.html">
+                <i class="fa fa-sliders icons"></i>
+                <span class="nav-link-text px-3">Virtual Card</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="profile.html">
+                <i class="fa fa-sliders icons"></i>
+                <span class="nav-link-text px-3">Recharge Mobile</span>
+              </a>
+            </li>
+          </ul>
+          <h6 class="navbar-heading p-0 text-muted">Support</h6>
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link " href="profile.html">
                 <i class="fa fa-sliders icons"></i>
                 <span class="nav-link-text px-3">Settings</span>
               </a>
             </li>
-          </ul>
-
-
-
-          <h6 class="navbar-heading p-0 text-muted">Support</h6>
-          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" target="_blank" href="#">
                 <i class="fa fa-ticket icons"></i>
-                <span class="nav-link-text px-3">Help Center</span>
+                <span class="nav-link-text px-3">Doc</span>
               </a>
             </li>
             <li class="nav-item">
@@ -236,7 +220,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link text-dark cursor-pointer" role="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
-                <i class="fa fa-shopping-cart fa-lg icons pt-g-2"></i> 
+                <i class="fa fa-shopping-cart fa-lg icons pt-g-2"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
                 <!-- Dropdown header -->
@@ -258,17 +242,18 @@
                 <div class="relative z-20 w-6 h-6 cursor-pointer ml-3">
                   <i class="fa  fa-bell  fa-lg icons "></i>
                 </div>
-                <div class="w-full fixed z-50 top-0 right-0 h-full overflow-x-hidden transform translate-x-0 transition ease-in-out duration-700"
+                <div
+                  class="w-full fixed z-50 top-0 right-0 h-full overflow-x-hidden transform translate-x-0 transition ease-in-out duration-700"
                   id="notification">
-                  <div class="fixed w-full h-full top-0 left-0 z-0" ></div>
+                  <div class="fixed w-full h-full top-0 left-0 z-0"></div>
 
-                  <div class="2xl:w-4/12 bg-gray-50 dd-bg h-screen Closemodel overflow-y-auto xp-8 pt-3 absolute right-0 z-30" >
+                  <div
+                    class="2xl:w-4/12 bg-gray-50 dd-bg h-screen Closemodel overflow-y-auto xp-8 pt-3 absolute right-0 z-30">
                     <div class="flex items-center justify-between">
                       <p tabindex="0" class="focus:outline-none text-2xl font-semibold leading-6 text-gray-800">
                         Notifications</p>
                       <button role="button" id="close_icon"
-                        class="focus:outline-none  focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md cursor-pointer"
-                        >
+                        class="focus:outline-none  focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md cursor-pointer">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M18 6L6 18" stroke="#4B5563" stroke-width="1.25" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -297,10 +282,11 @@
           </ul>
           <ul class="navbar-nav align-items-center ml-auto ml-md-0">
             <li class="nav-item dropdown">
-              <a class="nav-link pr-0 cursor-pointer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link pr-0 cursor-pointer" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 <div class="media align-items-center">
                   <div class="icon icon-shape bg-white text-primary rounded-circle shadow font-weight-bold">
-                      <i class="fa fa-user sm icons"></i>
+                    <i class="fa fa-user sm icons"></i>
                   </div>
                   <div class="media-body ml-2 d-none d-sm-block">
                     <p class="mb-0 text-sm font-weight-bold text-dark"></p>
@@ -330,7 +316,7 @@
     <div class="container-fluid">
       <div class="content-wrapper">
 
-        <div >
+        <div>
           <div class="row align-items-center justify-content-center" wire:poll>
             <div class="col-md-12 col-12">
               <div class="media align-items-center mx-4 py-3">
@@ -343,146 +329,109 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5 col-12">
-                
-                <div class="card mb-3">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col-12">
-                        <div class="media align-items-center">
-                          <div class="media-body">
-                            <h2 class="mb-2 font-weight-bolder text-dark">Verify Identity</h2>
-                            <p class="text-dark">Verify your BVN (Bank Verification Number), to get bank accounts for
-                              ordering Virtual USD & NGN Cards, receiving & sending money</p>
-                            <a href="Verification.html" class="btn btn-dark">BVN Verification</a>
-                          </div>
+            <div class="col-md-12 col-12">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+                      <div class="media align-items-center">
+                        <div class="media-body">
+                          <h2 class="mb-2 font-weight-bolder text-dark">Verify Identity</h2>
+                          <p class="text-dark">Verify your BVN (Bank Verification Number), to get bank accounts for
+                            ordering Virtual USD & MWK Cards, receiving & sending money</p>
+                          <a href="Verification.html" class="btn btn-dark">BVN Verification</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="card mb-3 bg-castro">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col-12">
-                        <div class="media align-items-center">
-                          <div class="media-body">
-                            <div class="row mb-2">
-                              <div class="col-6">
-                                <h3 class="mb-1 font-weight-bold text-white">🇳🇬 Balance</h3>
-                              </div>
-                              <div class="col-6 text-right">
-                              </div>
-                            </div>
-                            <h1 class="mb-3 text-white font-weight-bolder">
-                              <span id="main_balance" wire:ignore.self style="display:  show; ">
-                                0.00 NGN
-                              </span>
-                              <span id="mockup" wire:ignore.self style="display:  none; ">
-                                ***********
-                              </span>
-                              <a class="ml-3 fs-4 cursor-pointer text-white" href="javascript:void;" wire:click="xBalance"
-                                wire:ignore>
-                                <i class="fa fa-eye-slash" id="hide_balance"></i>
-                                <i class="fa fa-eye" id="reveal_balance" style="display:none;"></i>
-                              </a>
-                            </h1>
-                            <div wire:ignore class="modal fade" id="limits" tabindex="-1" role="dialog"
-                              aria-labelledby="modal-form" aria-hidden="true">
-                              <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h3 class="mb-0 font-weight-bolder">Transaction limits</h3>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
+              </div>
+              <div class="card mb-3 bg-castro">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+                      <div class="media align-items-center">
+                        <div class="media-body">
+                            <div class="row align-items-center">
+                              <div class="col-md-6 col-12">
+                                <div class="row">
+                                  <div class="col-4">
+                                    <h3 class=" font-weight-bold text-white">MWK Balance</h3>
                                   </div>
-                                  <div class="modal-body">
-                                    <ul class="list-group list-group-flush list my--3">
-                                      <li class="list-group-item bg-transparent">
-                                        <div class="row align-items-center">
-                                          <div class="col ml--2">
-                                            <p class="mb-0">How much can you receive per day?</p>
-                                          </div>
-                                          <div class="col-auto">
-                                            <h4 class="text-dark font-weight-bold">Unlimited</h4>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li class="list-group-item bg-transparent">
-                                        <div class="row align-items-center">
-                                          <div class="col ml--2">
-                                            <p class="mb-0">Maximum Account Balance</p>
-                                          </div>
-                                          <div class="col-auto">
-                                            <h4 class="text-dark font-weight-bold">Unlimited</h4>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li class="list-group-item bg-transparent">
-                                        <div class="row align-items-center">
-                                          <div class="col ml--2">
-                                            <p class="mb-0">The withdrawal limit per day</p>
-                                          </div>
-                                          <div class="col-auto">
-                                            <h4 class="text-dark font-weight-bold">NGN 1,000,000</h4>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li class="list-group-item bg-transparent">
-                                        <div class="row align-items-center">
-                                          <div class="col ml--2">
-                                            <p class="mb-0">What is the maximum amount that can be sent at a time?</p>
-                                          </div>
-                                          <div class="col-auto">
-                                            <h4 class="text-dark font-weight-bold">NGN 1,000,000</h4>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li class="list-group-item bg-transparent">
-                                        <div class="row align-items-center">
-                                          <div class="col ml--2">
-                                            <p class="mb-0">What is the minimum amount that can be withdrawn at a time?
-                                            </p>
-                                          </div>
-                                          <div class="col-auto">
-                                            <h4 class="text-dark font-weight-bold">NGN 100</h4>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li class="list-group-item bg-transparent">
-                                        <div class="row align-items-center">
-                                          <div class="col ml--2">
-                                            <p class="mb-0">Outward transfer fee (VAT inclusive)</p>
-                                          </div>
-                                          <div class="col-auto">
-                                            <h4 class="text-dark font-weight-bold">NGN 20</h4>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li class="list-group-item bg-transparent">
-                                        <div class="row align-items-center">
-                                          <div class="col ml--2">
-                                            <p class="mb-0">Inward transfer fee</p>
-                                          </div>
-                                          <div class="col-auto">
-                                            <h4 class="text-dark font-weight-bold">0.6%, capped at NGN 2,000.00</h4>
-                                          </div>
-                                        </div>
-                                      </li>
-                                    </ul>
+                                  <div class="col-7">
+                                    <select class="form-control select" name="bank_name" id="bank_name24">
+                                      <option value="24*50*803000">🇲🇼 MWK</option>
+                                      <option value="27*50*1000000">🇳🇬 NGN</option>
+                                      <option value="29*1*15006">🇿🇦 ZAR</option>
+                                      <option value="28*1*1000">🇬🇧 GBP</option>
+                                      <option value="25*1*1000">🇺🇸 USD</option>
+                                      <option value="26*1*18282">🇿🇲 ZMW</option>
+                                    </select>
                                   </div>
                                 </div>
+                                <h1 class="mb-3 text-white font-weight-bolder">
+                                  <span id="main_balance" wire:ignore.self style="display:  show; ">
+                                    0.00 MWK
+                                  </span>
+                                  <span id="mockup" wire:ignore.self style="display:  none; ">
+                                    ***********
+                                  </span>
+                                  <a class="ml-3 fs-4 cursor-pointer text-white" href="javascript:void;"
+                                    wire:click="xBalance" wire:ignore>
+                                    <i class="fa fa-eye-slash" id="hide_balance"></i>
+                                    <i class="fa fa-eye" id="reveal_balance" style="display:none;"></i>
+                                  </a>
+                                </h1>
+                              </div>
+                              <div class="col-md-6 col-12 text-md-end">
+                                <a data-toggle="modal" data-target="#payout24" href="" class="btn  btn-share"><i
+                                    class="fa fa-share"></i> Transfer</a>
                               </div>
                             </div>
-                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
-            <div class="col-md-7 col-12">
+          </div>  
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card dd-bg">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-8 mb-2">
+                      <h2 class="mb-2 font-weight-bolder">Virtual Card</h2>
+                      <p class="mb-3">We offer virtual prepaid Master Cards that allow you to pay for goods and services online.</p>
+                      <a href="#" class="btn btn-dark">Request Card</a>
+                    </div>
+                    <div class="col-4 mb-2">
+                      <img src="assets/image/private.avif" class="rounded" title="" style="height:auto; max-width:100%;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card dd-bg">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-8 mb-2">
+                      <h2 class="mb-2 font-weight-bolder">Physical Card</h2>
+                      <p class="mb-3">Get early access to Payouts</p>
+                      <span class="badge badge-pill badge-primary">Coming Soon </span>
+                    </div>
+                    <div class="col-4 mb-2">
+                      <img src="assets/image/physical.avif" class="rounded" title="" style="height:auto; max-width:60%;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-12">
               <div class="card ">
                 <div class="card-header">
                   <h2 class="mb-0 font-weight-bolder text-dark">Quick links</h2>
@@ -567,14 +516,108 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
-        <!-- Livewire Component wire-end:YHyp2Pb2Jn8Yih3fFYjn -->
-        <div class="row">
-
-        </div>
+        
+        
 
 
         <!-- footer begin -->
+      </div>
+    </div>
+
+    <div class="modal fade " id="payout24" tabindex="-1" role="dialog" aria-labelledby="modal-form"
+      aria-modal="true" >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="mb-0 font-weight-bolder">Request Payout</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <form action="" method="post">
+            <div class="modal-body">
+              <input type="hidden" name="_token" value="">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text text-future">MK</span>
+                  </div>
+                  <input type="number" class="form-control" min="100" max="7485.1" autocomplete="off" id="amount24"
+                    name="amount" placeholder="How much?" required="">
+                </div>
+              </div>
+              <input type="hidden" id="withdraw_percent_charge24" value="0">
+              <input type="hidden" id="withdraw_fiat_charge24" value="0">
+              <div class="form-group">
+                <select class="form-control" id="payout_type24" name="payout_type" required="">
+                  <option value="2*normal">Saved Bank</option>
+                  <option value="1*normal">Add New Bank</option>
+                </select>
+              </div>
+              <div class="form-group" id="old_beneficiary24" style="">
+                <select class="form-control" id="beneficiary24" name="beneficiary" required="required">
+                  <option value="">Select Bank</option>
+                </select>
+              </div>
+              <div id="bank24" style="display:none;">
+                <div class="form-group">
+                  <input type="text" name="name" id="name24" maxlength="255" class="form-control"
+                    placeholder="Name of account holder">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" name="bank_name" id="bank_name24">
+                    <option value="">Select bank</option>
+                    <option value="22">Ecobank</option>
+                    <option value="24">FDH Bank</option>
+                    <option value="26">First Capital Bank</option>
+                    <option value="25">MyBucks</option>
+                    <option value="20">National Bank</option>
+                    <option value="21">NBS Bank</option>
+                    <option value="23">Standard Bank</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="acct_no" id="acct_no24" pattern="\d*" maxlength="15" minlength="3"
+                    class="form-control" placeholder="Account number">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="acct_name" id="acct_name24" class="form-control" placeholder="Account name">
+                </div>
+              </div>
+              <div class="row mt-3 mb-3" id="new_beneficiary24" style="display:none;">
+                <div class="col-6">
+                  <div class="custom-control custom-control-alternative custom-checkbox">
+                    <input class="custom-control-input" id="custombeneficiary24" type="checkbox" name="new_beneficiary">
+                    <label class="custom-control-label" for="custombeneficiary24">
+                      <span class="text-dark">Save Bank</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="media align-items-center">
+                    <div class="media-body">
+                      <p>You will receive: <span id="receive24">0.00</span>MWK</p>
+                      <p>You will be charged : <span id="charge24">0.00</span>MWK</p>
+                      <p>Estimated time: 24 hours</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group col-12">
+              <input type="number" name="pincode" id="pincode24" class="form-control"
+                placeholder="Enter Transaction Pin e.g 1234">
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" id="payment24" class="btn btn-neutral btn-block">Confirm Transfer</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
