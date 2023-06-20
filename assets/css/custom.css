@@ -10,8 +10,20 @@
    color: #00C0BA !important;
 }
 
-.dt-buttons {
-    /* padding-left: 3rem; */
+.user-account-check .form-check-input:checked ~ label {
+    border-color: #66ccc7;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+.user-account-check label {
+    display: block;
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .dt-button {
@@ -76,8 +88,15 @@
 
  @media screen and (max-width:768px) {
     .text-md-end{
-        text-align: ;
+        
      }
+     .media-body .form-control {
+        width: 65%;
+    }
+
+    .sidenav-toggler-line{
+        background-color: #00C0BA;
+    }
  }
 
 
