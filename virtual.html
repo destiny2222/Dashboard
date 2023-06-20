@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Transaction</title>
+    <title>Chargebacks - PayChangu Dashboard</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
     <meta name="robots" content="index, follow">
@@ -101,8 +101,7 @@
             <!-- Brand -->
             <div class="sidenav-header d-flex align-items-center">
                 <a class="navbar-brand icons" href="#">
-                    <!-- <img src="" class="navbar-brand-img" alt="..."> -->
-                    Dashboard
+                    <img src="assets/image/Logo//logo.svg" class="navbar-brand-img" alt="...">
                 </a>
                 <div class="ml-auto">
                     <!-- Sidenav toggler -->
@@ -135,8 +134,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">
-                                <i class="fa-solid fa-file-invoice icons"></i>
+                            <a class="nav-link " href="chargebacks.html">
+                                <i class="fa-solid fa-undo-alt icons"></i>
                                 <span class="nav-link-text px-3">Chargebacks
                                 </span>
                             </a>
@@ -147,26 +146,26 @@
                     <h6 class="navbar-heading p-0 text-muted">Account</h6>
                     <ul class="navbar-nav mb-4">
                         <li class="nav-item">
-                            <a class="nav-link " href="#">
-                                <i class="fa fa-user-plus icons"></i>
+                            <a class="nav-link " href="payment.html">
+                                <i class="fa fa-sync icons"></i>
                                 <span class="nav-link-text px-3">Payment links</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="profile.html">
-                                <i class="fa fa-sliders icons"></i>
+                            <a class="nav-link " href="transfer.html">
+                                <i class="fa fa-random icons"></i>
                                 <span class="nav-link-text px-3">Transfer Money</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="profile.html">
-                                <i class="fa fa-sliders icons"></i>
+                            <a class="nav-link " href="virtual.html">
+                                <i class="fa fa-credit-card icons"></i>
                                 <span class="nav-link-text px-3">Virtual Card</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="profile.html">
-                                <i class="fa fa-sliders icons"></i>
+                            <a class="nav-link " href="recharge.html">
+                                <i class="fa fa-phone icons"></i>
                                 <span class="nav-link-text px-3">Recharge Mobile</span>
                             </a>
                         </li>
@@ -183,6 +182,12 @@
                             <a class="nav-link" target="_blank" href="#">
                                 <i class="fa fa-ticket icons"></i>
                                 <span class="nav-link-text px-3">Doc</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="#">
+                                <i class="fa fa-headset icons"></i>
+                                <span class="nav-link-text px-3">Customer Support</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -281,6 +286,7 @@
 
                             </div>
                         </div>
+
                     </ul>
                     <ul class="navbar-nav align-items-center ml-auto ml-md-0">
                         <li class="nav-item dropdown">
@@ -318,157 +324,147 @@
         </nav>
         <div class="container-fluid">
             <div class="content-wrapper">
-                <div class="row">
-                    <div class="container-fluid mt-6">
-                        <div class="content-wrapper mt-3">
-                            <a href="#" data-toggle="modal" data-target="#buy" class="btn btn-neutral mb-3">New card</a>
-                            <div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="modal-form"
-                                style="display: none;" aria-hidden="true">
-                                <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h3 class="mb-0 font-weight-bolder">New card</h3>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                        </div>
-                                        <form role="form" action="" method="post" id="payment-form">
-                                            <div class="modal-body">
-                                                <input type="hidden" name="_token" value="">
-                                                <div class="form-group row">
-                                                    <div class="col-lg-12">
-                                                        <div class="input-group">
-                                                            <input type="number" step="any" class="form-control"
-                                                                autocomplete="off" id="amount" name="amount"
-                                                                placeholder="How much?" min="100" max="10000000">
-                                                            <span class="input-group-append">
-                                                                <select class="form-control select"
-                                                                    style="padding: 0.35rem 2rem 0.35rem;" id="currency"
-                                                                    name="currency" required="">
-                                                                    <option value="27*100*10000000*0*0*NGN">🇳🇬 NGN
-                                                                    </option>
-                                                                    <option value="25*5*10000*2*5*USD">🇺🇸 USD</option>
-                                                                </select>
-                                                            </span>
-                                                        </div>
-                                                    </div>
+                <div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row align-items-center py-4">
+                                <div class="col-lg-10 col-md-12">
+                                    <form class="navbar-search navbar-search-light" id="navbar-search-main">
+                                        <div class="form-group mb-0">
+                                            <div class="input-group input-group-merge">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
                                                 </div>
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <div class="media align-items-center">
-                                                            <div class="media-body">
-                                                                <p>Card creation fee: <span id="creation">NGN
-                                                                        0.00</span></p>
-                                                                <p>Total: <span id="total">NGN 0.00</span></p>
+                                                <input class="form-control" wire:model="search"
+                                                    placeholder="Search Transaction" type="text">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-2 col-md-12 pt-md-3 pt-3 text-right">
+                                    <a href="#" data-toggle="modal" data-target="#buy" class="btn btn-neutral mb-3">New card</a>
+                                    <div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                                        <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="mb-0 font-weight-bolder">New card</h3>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                                <form role="form" action="" method="post" id="payment-form">
+                                                    <div class="modal-body">
+                                                        <input type="hidden" name="_token" value="">
+                                                        <div class="form-group row">
+                                                            <div class="col-lg-12">
+                                                                <div class="input-group">
+                                                                    <input type="number" step="any" class="form-control"
+                                                                        autocomplete="off" id="amount" name="amount"
+                                                                        placeholder="How much?" min="100" max="10000000">
+                                                                    <span class="input-group-append">
+                                                                        <select class="form-control select"
+                                                                            style="padding: 0.35rem 2rem 0.35rem;" id="currency"
+                                                                            name="currency" required="">
+                                                                            <option value="27*100*10000000*0*0*NGN">🇳🇬 NGN
+                                                                            </option>
+                                                                            <option value="25*5*10000*2*5*USD">🇺🇸 USD</option>
+                                                                        </select>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body">
+                                                                        <p>Card creation fee: <span id="creation">NGN
+                                                                                0.00</span></p>
+                                                                        <p>Total: <span id="total">NGN 0.00</span></p>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn btn-neutral btn-block my-4"
+                                                            id="ggglogin">Pay</button>
+                                                    </div>
+                                                </form>
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="submit" class="btn btn-neutral btn-block my-4"
-                                                    id="ggglogin">Pay</button>
-                                            </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="table-responsive py-4">
-                                    <div id="example_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                        <div class="row">
-                                            <div
-                                                class="col-md-6 col-12 d-flex align-items-center justify-conten-start mb-2">
-                                            </div>
-                                            <div class="col-md-6 col-12 d-flex align-items-center justify-content-end">
-                                                <div id="example_filter" class="dataTables_filter"><label>Search:<input
-                                                            type="search" class="form-control form-control-sm"
-                                                            placeholder="" aria-controls="example"></label></div>
-                                            </div>
-                                        </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-4 ">
                                         <div class="table-responsive">
-                                            <table class="table table-flush dataTable no-footer" id="example"
-                                                role="grid" aria-describedby="example_info">
+                                            <table class="table table-flush">
                                                 <thead>
-                                                    <tr role="row">
-                                                        <th class="sorting_asc" tabindex="0" aria-controls="example"
-                                                            rowspan="1" colspan="1" aria-sort="ascending"
-                                                            aria-label="S/N: activate to sort column descending"
-                                                            style="width: 51.9531px;">S/N</th>
-                                                        <th class="text-center sorting" tabindex="0"
-                                                            aria-controls="example" rowspan="1" colspan="1"
-                                                            aria-label="Card Holder: activate to sort column ascending"
-                                                            style="width: 155.609px;">Card Holder</th>
-                                                        <th class="text-center sorting" tabindex="0"
-                                                            aria-controls="example" rowspan="1" colspan="1"
-                                                            aria-label="Card Balance: activate to sort column ascending"
-                                                            style="width: 165.234px;">Card Balance</th>
-                                                        <th class="text-center sorting" tabindex="0"
-                                                            aria-controls="example" rowspan="1" colspan="1"
-                                                            aria-label="Card Number: activate to sort column ascending"
-                                                            style="width: 158.344px;">Card Number</th>
-                                                        <th class="text-center sorting" tabindex="0"
-                                                            aria-controls="example" rowspan="1" colspan="1"
-                                                            aria-label="Status: activate to sort column ascending"
-                                                            style="width: 91.2188px;">Status</th>
-                                                        <th class="text-center sorting" tabindex="0"
-                                                            aria-controls="example" rowspan="1" colspan="1"
-                                                            aria-label="Created: activate to sort column ascending"
-                                                            style="width: 107.641px;">Created</th>
+                                                    <tr>
+                                                        <th>S/N</th>
+                                                        <th>Card Holder</th>
+                                                        <th>Card Balance</th>
+                                                        <th>Card Number</th>
+                                                        <th>Status</th>
+                                                        <th>Created</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr class="odd">
-                                                        <td valign="top" colspan="6" class="dataTables_empty">No data
-                                                            available in table</td>
+                                                    <tr class="cursor-pointer" data-toggle="modal"
+                                                        data-target="#reference312ffbeb-6d8b-43ad-acd5-462ea2f710c7"
+                                                        href="">
+                                                        <td>1.</td>
+                                                        <td>James</td>
+                                                        <td>🇲🇼 3,000.00</td>
+                                                        <td>12865718</td>
+                                                        <td>
+                                                            <span class="badge badge-pill badge-success">
+                                                                Successful
+                                                            </span>
+                                                        </td>
+                                                        <td>2022/11/09 06:56:PM</td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer" data-toggle="modal"
+                                                        data-target="#referencee1bfad62-3e0a-415c-8d91-c3934afd131d"
+                                                        href="">
+                                                        <td>2.</td>
+                                                        <td>James</td>
+                                                        <td>🇲🇼 3,000.00</td>
+                                                        <td>24750941</td>
+                                                        <td>
+                                                            <span class="badge badge-pill badge-warning px-4">
+                                                                Pending
+                                                            </span>
+                                                        </td>
+                                                        <td>2022/09/26 05:07:AM</td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer" data-toggle="modal"
+                                                        data-target="#reference8d168193-8394-4783-8015-304df871ad23"
+                                                        href="">
+                                                        <td>3.</td>
+                                                        <td>James</td>
+                                                        <td>🇲🇼 3,000.00</td>
+                                                        <td>24750941</td>
+                                                        <td>
+                                                            <span class="badge badge-pill badge-success">
+                                                                Successful
+                                                            </span>
+                                                        </td>
+                                                        <td>2022/09/21 06:16:PM</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="row">
-                                            <div
-                                                class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
-                                                <div class="dataTables_length" id="example_length"><label>Show <select
-                                                            name="example_length" aria-controls="example"
-                                                            class="custom-select custom-select-sm form-control form-control-sm">
-                                                            <option value="10">10</option>
-                                                            <option value="25">25</option>
-                                                            <option value="50">50</option>
-                                                            <option value="100">100</option>
-                                                        </select></label></div>
-                                            </div>
-                                            <div
-                                                class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
-                                                <div class="dataTables_info" id="example_info" role="status"
-                                                    aria-live="polite">Showing 0 to 0 of 0 entries</div>
-                                            </div>
-                                            <div
-                                                class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
-                                                <div class="dataTables_paginate paging_simple_numbers"
-                                                    id="example_paginate">
-                                                    <ul class="pagination">
-                                                        <li class="paginate_button page-item previous disabled"
-                                                            id="example_previous"><a href="#" aria-controls="example"
-                                                                data-dt-idx="0" tabindex="0"
-                                                                class="page-link">Previous</a></li>
-                                                        <li class="paginate_button page-item next disabled"
-                                                            id="example_next"><a href="#" aria-controls="example"
-                                                                data-dt-idx="1" tabindex="0" class="page-link">Next</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-
-
-                            <!-- footer begin -->
                         </div>
                     </div>
                 </div>
+                <!-- Livewire Component wire-end:iX3T3rjRAX7Xf6EtTTkt -->
+
+                <!-- footer begin -->
             </div>
         </div>
 
@@ -502,5 +498,4 @@
         <script src="assets/js/alpine.js" defer></script>
         <script src="assets/js/script.js"></script>
 </body>
-
 </html>
