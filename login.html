@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
     <meta name="robots" content="index, follow">
-    <meta name="description"
-        content="PayChangu Pay is at your service with its user-friendly features, secure infrastructure and applications that make a difference." />
+    <!-- <meta name="description"
+        content="PayChangu  is at your service with its user-friendly features, secure infrastructure and applications that make a difference." /> -->
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="http://tktest.cliffedgenetwork.com/public/images/favicon.png">
     <!-- Page Title  -->
-    <title>Login | PayChangu Pay</title>
+    <title>Login | PayChangu </title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/toast.css" type="text/css">
@@ -154,53 +154,29 @@
     <script src="assets/js/datatable-btns.js"></script>
 
     <script>
-        'use strict';
-        ! function ($) {
-            $(function () {
-                $('[data-toggle="password"]').each(function () {
-                    var input = $(this);
-                    var eye_btn = $(this).parent().find('.input-group-text');
-                    eye_btn.css('cursor', 'pointer').addClass('input-password-hide');
-                    eye_btn.on('click', function () {
-                        if (eye_btn.hasClass('input-password-hide')) {
-                            eye_btn.removeClass('input-password-hide').addClass('input-password-show');
-                            eye_btn.find('.fa').removeClass('fa-eye').addClass('fa-eye-slash')
-                            input.attr('type', 'text');
-                        } else {
-                            eye_btn.removeClass('input-password-show').addClass('input-password-hide');
-                            eye_btn.find('.fa').removeClass('fa-eye-slash').addClass('fa-eye')
-                            input.attr('type', 'password');
-                        }
-                    });
-                });
-            });
-        }(window.jQuery);
+        const Close_eye = document.querySelector(".icon-show");
+        const Open_eye = document.querySelector(".icon-hide");
+        const PasswordInput = document.querySelector("#password");
+        
+        
+        Close_eye.addEventListener('click', function () {
+           if (PasswordInput.type === 'password') {
+               PasswordInput.type = 'text';
+               Close_eye.style.display = 'none';
+               Open_eye.style.display = 'block';
+           } else {
+               PasswordInput.type = 'password';
+               Close_eye.style.display = 'block';
+               Open_eye.style.display = 'none';
+           }
+           });
+        
+           Open_eye.addEventListener('click', function () {
+           if (PasswordInput.type === 'text') {
+             PasswordInput.type = 'password';
+             Close_eye.style.display = 'block';
+             Open_eye.style.display = 'none';
+           }
+        }); 
     </script>
-
-
-    <script>
-        'use strict';
-        ! function ($) {
-            $(function () {
-                $('[data-toggle="password"]').each(function () {
-                    var input = $(this);
-                    var eye_btn = $(this).parent().find('.input-group-text');
-                    eye_btn.css('cursor', 'pointer').addClass('input-password-hide');
-                    eye_btn.on('click', function () {
-                        if (eye_btn.hasClass('input-password-hide')) {
-                            eye_btn.removeClass('input-password-hide').addClass('input-password-show');
-                            eye_btn.find('.fa').removeClass('ppppppppppppppppfa-eye').addClass('fa-eye-slash')
-                            input.attr('type', 'text');
-                        } else {
-                            eye_btn.removeClass('input-password-show').addClass('input-password-hide');
-                            eye_btn.find('.fa').removeClass('fa-eye-slash').addClass('fa-eye')
-                            input.attr('type', 'password');
-                        }
-                    });
-                });
-            });
-        }(window.jQuery);
-    </script>
-
-
 </html>

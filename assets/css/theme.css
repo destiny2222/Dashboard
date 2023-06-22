@@ -31387,6 +31387,7 @@ li {
 
 .passcode-icon {
   display: none;
+  width: 20px;
 }
 .passcode-icon.icon-show {
   display: block;
