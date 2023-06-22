@@ -21242,9 +21242,9 @@ textarea[resize='horizontal'] {
 }
 
 @media (min-width: 1200px) {
-    .sidenav:hover {
+    /* .sidenav:hover { 
         max-width: 250px;
-    }
+     } */
 
     .sidenav .sidenav-toggler {
         padding: 1.5rem;
@@ -21254,7 +21254,6 @@ textarea[resize='horizontal'] {
 .sidenav .navbar-brand,
 .sidenav .navbar-heading {
     display: none;
-
     padding: 1.5rem;
 }
 
@@ -21264,8 +21263,10 @@ textarea[resize='horizontal'] {
 
 .g-sidenav-show .sidenav .navbar-brand,
 .g-sidenav-show .sidenav .navbar-heading {
-    display: block;
+    /* display: block; */
 }
+
+
 
 .g-sidenav-show .sidenav .nav-item .collapse {
     height: auto;
@@ -26062,7 +26063,7 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
     top: 0;
     left: 0;
 
-    overflow: scroll !important;
+    overflow: hidden !important;
 
     box-sizing: content-box !important;
     width: auto !important;
