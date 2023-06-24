@@ -86,10 +86,12 @@
    width: 40%;
 }
 
+.g-sidenav-hidden:not(.g-sidenav-show)  .sidenav:hover .scrollbar-inner .navbar-na .nav-item a::after{
+   display: block !important;
+}
+
  @media screen and (max-width:768px) {
-    .text-md-end{
-        
-     }
+ 
      .media-body .form-control {
         width: 65%;
     }
